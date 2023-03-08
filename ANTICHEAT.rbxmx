@@ -1,0 +1,106 @@
+<roblox xmlns:xmime="http://www.w3.org/2005/05/xmlmime" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.roblox.com/roblox.xsd" version="4">
+	<Meta name="ExplicitAutoJoints">true</Meta>
+	<External>null</External>
+	<External>nil</External>
+	<Item class="LocalScript" referent="RBXB23C083C05A249069D22CB64A72D2254">
+		<Properties>
+			<BinaryString name="AttributesSerialize"></BinaryString>
+			<bool name="Disabled">false</bool>
+			<Content name="LinkedSource"><null></null></Content>
+			<string name="Name">ANTICHEAT</string>
+			<token name="RunContext">0</token>
+			<string name="ScriptGuid">{5EB6D080-7F4B-4115-9F41-D10C48907AE9}</string>
+			<ProtectedString name="Source"><![CDATA[--[[
+
+ooooo            o      oooooooooo  oooooooooo  ooooo  oooooooo8  
+ 888            888      888    888  888    888  888  888         
+ 888           8  88     888oooo88   888oooo88   888   888oooooo  
+ 888      o   8oooo88    888         888  88o    888          888 
+o888ooooo88 o88o  o888o o888o       o888o  88o8 o888o o88oooo888  
+                                                                  
+                                                                  
+                                                                  
+Lapris systems is a open souce project started by a 10 year old on 1/12/23. 
+Since lapris systems is open source, you are allowed to use or steal this script
+as long as it is not for own profit. If it is for commercial use or own profit
+please keep the watermark above and at the end. If it is not and you will be 
+using this or selling it for free then you may delete the watermarks and 
+custimize it as you please. Thank you for using lapris systems.
+
+
+Website :
+https://lapris-systems.billmydvale.repl.co/
+
+Discord :
+https://discord.gg/zgpS88Eppe
+
+Youtube :
+https://www.youtube.com/channel/UCUklRh2mOuYNhM7_CqecAXQ
+
+Roblox Group Youtube :
+https://www.youtube.com/channel/UCxC87YGapO3M_S5MmU9dkTw
+                                                                  
+                                                                                                   
+                                                                                           
+                                                                          
+                                                                                                                                                               
+]]
+
+local hum = script.Parent:WaitForChild("Humanoid")
+local localplayer = game.Players.LocalPlayer
+local character = localplayer.Character
+local HRP = character:WaitForChild("HumanoidRootPart")
+
+local message = "LAPRIS anticheat systems has detected some suspicous activity during this session for that reason, your session has been terminated."
+print("Lapris Systems Loaded.")
+--Humanoid player hacks
+while true do
+	wait(0.0001) 
+	if hum.WalkSpeed ~= 16 then
+
+		localplayer:Kick(message)
+	end
+	if hum.JumpPower ~= 50 then
+		localplayer:Kick(message)
+
+	end
+
+
+	if hum.MaxHealth > 100 then
+		localplayer:Kick(message)
+	end
+
+	if hum.Health > 100 then
+		localplayer:Kick(message)
+	end
+
+
+end
+
+--Fly hacks
+HRP.ChildAdded:Connect(function(Object)
+	if Object.ClassName == "BodyGyro" or Object.ClassName == "BodyPosition" or Object.ClassName == "BodyVelocity" then
+		Object:Destroy()
+		localplayer:Kick(message)
+	end
+end)
+
+--[[
+
+L)                               ##         
+L)                                          
+L)       a)AAAA  p)PPPP   r)RRR  i)  s)SSSS 
+L)        a)AAA  p)   PP r)   RR i) s)SSSS  
+L)       a)   A  p)   PP r)      i)      s) 
+L)llllll  a)AAAA p)PPPP  r)      i) s)SSSS  
+                 p)                         
+                 p)                         
+                 
+                 
+
+]]]]></ProtectedString>
+			<int64 name="SourceAssetId">-1</int64>
+			<BinaryString name="Tags"></BinaryString>
+		</Properties>
+	</Item>
+</roblox>
