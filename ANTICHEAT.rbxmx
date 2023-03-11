@@ -1,16 +1,3 @@
-<roblox xmlns:xmime="http://www.w3.org/2005/05/xmlmime" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.roblox.com/roblox.xsd" version="4">
-	<Meta name="ExplicitAutoJoints">true</Meta>
-	<External>null</External>
-	<External>nil</External>
-	<Item class="LocalScript" referent="RBXB23C083C05A249069D22CB64A72D2254">
-		<Properties>
-			<BinaryString name="AttributesSerialize"></BinaryString>
-			<bool name="Disabled">false</bool>
-			<Content name="LinkedSource"><null></null></Content>
-			<string name="Name">ANTICHEAT</string>
-			<token name="RunContext">0</token>
-			<string name="ScriptGuid">{5EB6D080-7F4B-4115-9F41-D10C48907AE9}</string>
-			<ProtectedString name="Source"><![CDATA[--[[
 
 ooooo            o      oooooooooo  oooooooooo  ooooo  oooooooo8  
  888            888      888    888  888    888  888  888         
@@ -29,7 +16,7 @@ custimize it as you please. Thank you for using lapris systems.
 
 
 Website :
-https://lapris-systems.billmydvale.repl.co/
+https://bill12346.github.io/laprissystems.github.io/
 
 Discord :
 https://discord.gg/zgpS88Eppe
